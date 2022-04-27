@@ -10,7 +10,7 @@ SAVED_DATA = "clipboard.json"
 #Allows the save function giving write access to the clipboard
 def save_items(filepath, data):
     with open(filepath, "w") as f:
-        json.dump(data, f)
+        json.dump(data, f, indent = 4)
 
 #Allows the load function giving read access to the clipboard
 def load_data(filepath):
@@ -23,7 +23,7 @@ def load_data(filepath):
 
         
 #Since the length of the command includes the name of the file
-# we need to let the lenght = 2 and start at the "second" item
+#we need to let the length = 2 and start at the "second" item
 #if successful, it loads the json file
 if len(sys.argv) == 2:
     command = sys.argv[1]
