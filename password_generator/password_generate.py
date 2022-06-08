@@ -1,0 +1,1 @@
+#this will generate a strong password given certain conditions

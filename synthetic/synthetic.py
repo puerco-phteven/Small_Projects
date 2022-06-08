@@ -1,0 +1,1 @@
+#This script will gather a URL from a user, attempt to connect to website and return the HTTP status code
